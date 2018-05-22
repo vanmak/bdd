@@ -26,7 +26,9 @@ namespace BDD_Specflow_Webdriver.Step_Definitions
 
         [When(@"I enter login details for (.*)")]
         public void WhenIEnterLoginDetailsFor(string userType)
-        {   testData.UserData = Properties.GetUserType(userType);
+        {
+            var op = AppDomain.CurrentDomain.BaseDirectory;
+            testData.UserData = Properties.GetUserType(userType);
             UserData userData = testData.UserData;
             loginPage.EnterUserNameAndPassword(userData.Username, userData.Password);
             loginPage.Submit();

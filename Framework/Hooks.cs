@@ -84,7 +84,7 @@ namespace BDD_Specflow_Webdriver.Utils
 
                 else if (testExecution == "chrome")
                 {
-                    localDriver = new ChromeDriver(@"C:\Users\Admin\Downloads\bdd_specflow_nunit-master\bdd_specflow_nunit-master\packages\Selenium.WebDriver.ChromeDriver.2.27.0");
+                    localDriver = new ChromeDriver(@"C:\Users\Admin\Downloads\bdd_specflow_nunit-master\bdd_specflow_nunit-master\packages\Selenium.WebDriver.ChromeDriver.2.27.0\");
                     FeatureContext.Current["driver"] = localDriver;
                 }
 
